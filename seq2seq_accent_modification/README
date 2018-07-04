@@ -1,0 +1,25 @@
+README
+
+seq2seq script based on paper by Ilya Sutskever(https://arxiv.org/abs/1409.3215)
+
+We performed an accent modification using this script. Data can be queried at accent.gmu.edu
+
+Script has 4 keys:
+
+--path_to_dataset:
+    path to the dataset. Dataset is a txt file where each line represents a pair or words deparated by tab character. Each lines ends with \n character
+    Sample dataset can be found here: http://www.manythings.org/anki/
+
+--num_samples:
+    number of pairs to be processed
+
+--num_epochs:
+    number of epochs
+
+--path_to_model:
+    path to the file to save the model weights
+
+example of the running command:
+
+python seq2seq_final.py --path_to_dataset ./data/russian-to-gma.txt --num_samples 1000 --num_epochs 10 --path_to_model ./data/model.h5
+
