@@ -1,4 +1,4 @@
-README statistical_model.py
+statistical_model.py
 
 Class Sound contains imporant information that being updated during training.
 
